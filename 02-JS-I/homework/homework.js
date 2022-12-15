@@ -115,15 +115,21 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  return num % 2 === 0 
+  if (num % 2 === 0) {
+    return true;
+  } else { 
+    return false;
+  }
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % "!= 0") return true;
-  return false;  
+  if (num % "!= 0") {
+    return true; 
+} else {
+  return false;
 }
 
 function elevarAlCuadrado(num) {
@@ -161,7 +167,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random(0, 1)
+  return Math.random()
 }
 
 function esPositivo(numero) {
@@ -169,9 +175,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero > 0) return "Es positivo";
-  if(numero < 0) return "Es negativo";
-  if(numero === 0) return false
+  if(numero > 0) {
+    return false;
+  }
+  else if (numero > 0) {
+    return "Es positivo";
+  }
+  else {
+    return "Es negativo";
+  }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -198,7 +210,7 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return ancho * alto;
+  return alto * ancho;
 }
 
 
@@ -278,4 +290,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+}
