@@ -131,6 +131,7 @@ function esImpar(num) {
 } else {
   return false;
 }
+}
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
@@ -289,5 +290,5 @@ module.exports = {
   retornarPerimetro,
   areaDelTriangulo,
   deEuroAdolar,
-  esVocal,
-}
+  esVocal, 
+} 
